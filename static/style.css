@@ -50,8 +50,33 @@ table {
 /* ################################################# */
 
 html {
+  overflow-y: scroll;
   width: 100%;
 }
 header {
-  text-align: center;
+  margin: 10px;
+  width: 99%;
+  float: left;
 }
+header h1 {
+  font-size: 4vmax;
+}
+menu {
+  line-height: 110%;
+  margin: 10px;
+  font-size: 2vmax;
+  float: left;
+  clear: both;
+}
+.page-content {
+  margin: 10px;
+  font-size: 2vmax;
+  float: left;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  float: left;
+  clear: both;
+}
+

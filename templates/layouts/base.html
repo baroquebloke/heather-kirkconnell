@@ -11,34 +11,38 @@
     <div class="wrap">
       <header>
         <h1>
-          <a href="/">Heather</a>
+          <a href="/">Heather Kirkconnell</a>
         </h1>
-        <h1>
-          <a href="/">Kirkconnell</a>
-        </h1>
-        <h2>
-          <a href="/">Organist</a>
-        </h2>
       </header>
       <menu id="nav">
         <ul>
           <li>
-            <a href="/about.html">About</a>
+            <a href="/about">About</a>
           </li>
           <li>
-            <a href="/philosophy.html">Philosophy</a>
+            <a href="/philosophy">Philosophy</a>
           </li>
           <li>
-            <a href="/events.html">Events</a>
+            <a href="/events">Events</a>
           </li>
           <li>
-            <a href="/contact.html">Contact</a>
+            <a href="/contact">Contact</a>
           </li>
         </ul>
       </menu>
     </div>
     <div class="wrap">
       <div class="page-content">
+        {% block index %}
+        {% endblock %}
+        {% block about %}
+        {% endblock %}
+        {% block philosophy %}
+        {% endblock %}
+        {% block events %}
+        {% endblock %}
+        {% block contact %}
+        {% endblock %}
       </div>
     </div>
     <footer>
