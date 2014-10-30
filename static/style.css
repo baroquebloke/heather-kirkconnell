@@ -49,34 +49,52 @@ table {
 
 /* ################################################# */
 
-html {
-  overflow-y: scroll;
-  width: 100%;
+html, body {
+  height: 100%;
+}
+.wrap {
+  min-height: 100%;
+  margin-bottom: -20px;
+}
+.wrap:after {
+  content: "";
+  display: block;
 }
 header {
   margin: 10px;
-  width: 99%;
-  float: left;
+  text-align: center;
 }
 header h1 {
   font-size: 4vmax;
 }
+header a {
+  text-decoration: none;
+  color: #000;
+}
 menu {
-  line-height: 110%;
   margin: 10px;
-  font-size: 2vmax;
-  float: left;
+  font-size: 2.5vmax;
+  text-align: center;
   clear: both;
+}
+menu li {
+  display: inline;
+}
+menu a {
+  text-decoration: none;
+  color: #000;
 }
 .page-content {
   margin: 10px;
-  font-size: 2vmax;
-  float: left;
+  font-size: 2.5vmax;
+  text-align: center;
+  clear: both;
+}
+footer, .wrap:after {
+  height: 20px;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  float: left;
+  text-align: center;
   clear: both;
 }
 
