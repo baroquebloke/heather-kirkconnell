@@ -8,44 +8,38 @@
     <link rel="stylesheet" type="text/css" href="/static/style.css"/>
   </head>
   <body>
-    <div class="wrap">
-      <header>
-        <h1>
-          <a href="/">Heather Kirkconnell</a>
-        </h1>
-      </header>
-      <menu id="nav">
-        <ul>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/philosophy">Philosophy</a>
-          </li>
-          <li>
-            <a href="/events">Events</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </menu>
-      <div class="page-content">
-        {% block index %}
+    <div class="head-nav">
+      <div id="header">
+        {% block header %}
         {% endblock %}
-        {% block about %}
-        {% endblock %}
-        {% block philosophy %}
-        {% endblock %}
-        {% block events %}
-        {% endblock %}
-        {% block contact %}
+      </div>
+      <div id="menu">
+        {% block menu %}
         {% endblock %}
       </div>
     </div>
-    <footer>
-      <h3>&copy by Farnsworth 2014</h3>
-    </footer>
+    <div class="page-content">
+      <div id="about">
+        {% block about %}
+        {% endblock %}
+      </div>
+      <div id="philosophy">
+        {% block philosophy %}
+        {% endblock %}
+      </div>
+      <div id="events">
+        {% block events %}
+        {% endblock %}
+      </div>
+      <div id="contact">
+        {% block contact %}
+        {% endblock %}
+      </div>
+      <div id="footer">
+        {% block footer %}
+        {% endblock %}
+      </div>
+    </div>
   </body>
 </html>
 
