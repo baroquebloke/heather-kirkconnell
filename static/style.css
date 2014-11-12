@@ -50,8 +50,9 @@ table {
 /* ################################################# */
 
 html {
-  background-color: yellow;
-  font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
+  background-color: #59abe3;
+  font-family: Verdana,Geneva,sans-serif;
+  color: #2c3e50;
 }
 body {
   width: 1000px;
@@ -59,17 +60,42 @@ body {
   margin: 0 auto;
 }
 .head-nav {
-  background-color: blue;
-  width: 300px;
+  width: 198px;
+  height: 475px;
+  text-align: right;
+  padding: 0 50px 25px 0;
+  border-right: 2px dashed #2c3e50;
   float: left;
 }
+#header a {
+  line-height: 30px;
+  font-size: 200%;
+}
+.head-nav a {
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 150%;
+  color: #2c3e50;
+}
+.head-nav a:active {
+  color: #f1c40f
+}
+#menu {
+  padding-top: 10px;
+}
 .page-content {
-  background-color: red;
-  width: 700px;
-  height: 250px;
+  width: 650px;
+  height: 500px;
+  padding: 0 50px 0 50px;
+  line-height: 25px;
   overflow: hidden;
   float: right;
 }
 .page-content h1 {
-  margin-bottom: 100px;
+  margin-bottom: 9999px;
+}
+#footer {
+  padding: 25px 0 25px 25px;
+  border-top: 2px dashed #2c3e50;
+  clear: both;
 }
