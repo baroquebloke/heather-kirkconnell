@@ -50,40 +50,69 @@ table {
 /* ################################################# */
 html, body {
   width: 100%;
+  background-color: #e4f1fe;
 }
 .wrap {
-  background-color: red;
-  width: 1000px;
+  background-color: #89c4f4;
+  width: 950px;
   margin: 0 auto;
   margin-top: 25px;
-  padding: 25px;
+  padding: 25px 25px 0 25px;
+  -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+          border-radius: 12px;
 }
 #header {
-  width: 400px;
+  width: 300px;
+  text-align: right;
   font-size: 300%;
+  background-color: #1abc9c;
+  -webkit-border-radius: 12px 12px 0 0;
+     -moz-border-radius: 12px 12px 0 0;
+          border-radius: 12px 12px 0 0;
+
+  margin-right: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
   float: left;
 }
 #menu {
-  width: 400px;
+  width: 300px;
   font-size: 200%;
-  text-align: center;
+  text-align: right;
+  background-color: #1abc9c;
+  -webkit-border-radius: 0 0 12px 12px;
+     -moz-border-radius: 0 0 12px 12px;
+          border-radius: 0 0 12px 12px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  padding-right: 25px;
+  padding-bottom: 25px;
   float: left;
   clear: both;
 }
 #menu li {
-  display: inline;
 }
 .page-content {
+  background-color: yellow;
   font-size: 150%;
   text-align: justify;
+  margin-bottom: 10px;
+  margin: 25px;
+  padding: 25px;
+  -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+          border-radius: 12px;
+
 }
 footer {
+  padding: 25px;
   clear: both;
 }
 footer h1 {
-  float: left;
+  display: inline;
 }
-footer a {
+footer #resume {
   float: right;
 }
 
