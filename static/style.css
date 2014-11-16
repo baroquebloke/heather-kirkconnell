@@ -49,28 +49,30 @@ table {
 
 /* ################################################# */
 html, body {
+  height: 100%;
   width: 100%;
   background-color: #e4f1fe;
 }
 .wrap {
-  background-color: #89c4f4;
   width: 950px;
+  min-height: 100%;
   margin: 0 auto;
-  margin-top: 25px;
-  padding: 25px 25px 0 25px;
-  -webkit-border-radius: 12px;
-     -moz-border-radius: 12px;
-          border-radius: 12px;
+  margin-bottom: -20px;
+}
+.wrap:after {
+  content: "";
+  display: block;
+  height: 20px;
 }
 #header {
   width: 300px;
   text-align: right;
   font-size: 300%;
   background-color: #1abc9c;
-  -webkit-border-radius: 12px 12px 0 0;
-     -moz-border-radius: 12px 12px 0 0;
-          border-radius: 12px 12px 0 0;
-
+  -webkit-border-radius: 0 50px 0 0;
+     -moz-border-radius: 0 50px 0 0;
+          border-radius: 0 50px 0 0;
+  margin-top: 25px;
   margin-right: 25px;
   padding-right: 25px;
   padding-top: 25px;
@@ -81,11 +83,10 @@ html, body {
   font-size: 200%;
   text-align: right;
   background-color: #1abc9c;
-  -webkit-border-radius: 0 0 12px 12px;
-     -moz-border-radius: 0 0 12px 12px;
-          border-radius: 0 0 12px 12px;
+  -webkit-border-radius: 0 0 0 50px;
+     -moz-border-radius: 0 0 0 50px;
+          border-radius: 0 0 0 50px;
   margin-right: 25px;
-  margin-bottom: 10px;
   padding-right: 25px;
   padding-bottom: 25px;
   float: left;
@@ -94,25 +95,17 @@ html, body {
 #menu li {
 }
 .page-content {
-  background-color: yellow;
+  min-height: 250px;
   font-size: 150%;
   text-align: justify;
-  margin-bottom: 10px;
-  margin: 25px;
-  padding: 25px;
-  -webkit-border-radius: 12px;
-     -moz-border-radius: 12px;
-          border-radius: 12px;
-
+  padding: 50px 25px 25px 25px;
 }
 footer {
-  padding: 25px;
+  height: 20px;
+  text-align: center;
   clear: both;
 }
 footer h1 {
   display: inline;
-}
-footer #resume {
-  float: right;
 }
 
