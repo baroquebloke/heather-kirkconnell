@@ -51,7 +51,7 @@ table {
 html, body {
   height: 100%;
   width: 100%;
-  background-color: #e4f1fe;
+  background-color: #4ecdc4;
 }
 .wrap {
   width: 950px;
@@ -64,41 +64,45 @@ html, body {
   display: block;
   height: 20px;
 }
-#header {
-  width: 300px;
+.head-nav {
+  width: 250px;
   text-align: right;
-  font-size: 300%;
-  background-color: #1abc9c;
-  -webkit-border-radius: 0 50px 0 0;
-     -moz-border-radius: 0 50px 0 0;
-          border-radius: 0 50px 0 0;
-  margin-top: 25px;
-  margin-right: 25px;
-  padding-right: 25px;
-  padding-top: 25px;
+  background-color: #e4f1fe;
+  -webkit-border-radius: 25px 25px 0 25px;
+     -moz-border-radius: 25px 25px 0 25px;
+          border-radius: 25px 25px 0 25px;
+  margin: 25px 25px 0 25px;
+  padding: 25px;
   float: left;
+}
+.head-nav a {
+  text-decoration: none;
+  color: #22313f;
+}
+.head-nav a:active {
+  color: #4ecdc4;
+}
+#header {
+  font-size: 300%;
 }
 #menu {
-  width: 300px;
   font-size: 200%;
-  text-align: right;
-  background-color: #1abc9c;
-  -webkit-border-radius: 0 0 0 50px;
-     -moz-border-radius: 0 0 0 50px;
-          border-radius: 0 0 0 50px;
-  margin-right: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
-  float: left;
-  clear: both;
-}
-#menu li {
 }
 .page-content {
-  min-height: 250px;
+  min-height: 200px;
   font-size: 150%;
   text-align: justify;
-  padding: 50px 25px 25px 25px;
+  padding: 50px 25px 25px 50px;
+}
+@media screen and (max-width: 640px) {
+  .wrap { width: 440px; }
+}
+@media screen and (max-width: 640px) {
+  .head-nav { width: 100%;
+              text-align: center; 
+              margin: 25px;
+              margin: 0 auto;
+              float: none; }
 }
 footer {
   height: 20px;
