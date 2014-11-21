@@ -8,12 +8,13 @@
     <link rel="stylesheet" type="text/css" href="/static/style.css"/>
   </head>
   <body>
-    <div class="wrap">
-      <div class="head-nav">
-        <div id="header">
+    <div class="container">
+      <div class="head-wrap">
+        <header>
+          <img src="/static/headshot.jpg"/>
           <a href="/">Heather Kirkconnell</a>
-        </div>
-        <div id="menu">
+        </header>
+        <menu>
           <ul>
             <li>
               <a href="/">About</a>
@@ -22,32 +23,29 @@
               <a href="/philosophy">Philosophy</a>
             </li>
             <li>
+              <a href="/static/HK_CV.pdf" target="blank">Resume</a> 
+            </li>
+            <li>
               <a href="/contact">Contact</a>
             </li>
           </ul>
+        </menu>
+      </div>
+      <div class="content-wrap">
+        <div class="page-content">
+          {% block index %}
+          {% endblock %}
+          {% block about %}
+          {% endblock %}
+          {% block philosophy %}
+          {% endblock %}
+          {% block events %}
+          {% endblock %}
+          {% block contact %}
+          {% endblock %}
         </div>
       </div>
-      <div class="page-content">
-        {% block index %}
-        {% endblock %}
-        {% block about %}
-        {% endblock %}
-        {% block philosophy %}
-        {% endblock %}
-        {% block events %}
-        {% endblock %}
-        {% block contact %}
-        {% endblock %}
-      </div>
     </div>
-    <footer>
-      <h1>
-        &copy by Farnsworth 2014
-      </h1>
-      <h1 id="resume">
-        <a href="/static/HK_CV.pdf" target="blank">Heather's Resume</a>
-      </h1>
-    </footer>
   </body>
 </html>
 
