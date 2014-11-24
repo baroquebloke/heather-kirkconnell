@@ -51,7 +51,7 @@ table {
 html, body {
   background-color: #81cfe0;
   height: 100%;
-  color: #22313f;
+  color: #34495e;
   font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
 }
 .container {
@@ -115,13 +115,6 @@ menu li {
 menu a {
   text-decoration: none;
   color: #1e824c; 
-  /*-webkit-text-stroke: 1px #22313f;
-  text-shadow:
-      1px 1px 0 #000,
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-     -1px 1px 0 #000,
-      1px 1px 0 #000;*/
 }
 .content-wrap {
   background-color: #c5eff7; 
@@ -134,16 +127,44 @@ menu a {
 }
 .page-content {
   padding: 2%;
-  text-align: justify;
   font-size: 125%;
   line-height: 25px;
+  text-align: justify;
+  text-indent: 30px;
   float: left;
+}
+.res-pdf {
+  text-align: center;
+  text-indent: 0;
+  margin: 0 auto;
+}
+.res-pdf a {
+  text-decoration: none;
+}
+.page-content h2 {
+  font-style: italic; 
+  text-align: left;
+  text-indent: 0;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.page-content li {
+  text-indent: 30px;
+  margin-bottom: 20px;
+  padding: 0 20px 0 20px;
+}
+
+.res-section {
+  border-bottom: 1px solid #333;
+  font-size: 120%;
+  text-align: center;
+  text-indent: 0;
+  margin: 50px 0 30px 0;
 }
 footer {
   height: 20px;
-  max-width: 50%;
-  text-align: center;
-  border-top: 1px dashed #22313f;
+  max-width: 90%;
+  text-align: left;
   margin: 0 auto;
   clear: both;
 }
