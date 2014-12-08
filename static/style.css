@@ -91,7 +91,7 @@ header img {
      -moz-box-shadow: 6px 8px 6px -6px black;
           box-shadow: 6px 8px 6px -6px black;
 }
-header a {
+header h1 {
   font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
   text-shadow: 0 0 1px #22313f;
   color: #1e824c; 
@@ -127,7 +127,6 @@ menu a {
 }
 .page-content {
   padding: 2%;
-  font-size: 125%;
   line-height: 25px;
   text-align: justify;
   text-indent: 30px;
@@ -153,7 +152,12 @@ menu a {
   margin-bottom: 20px;
   padding: 0 20px 0 20px;
 }
-
+.page-content p {
+  margin-top: 10px;
+}
+.page-content p:first-child {
+  margin-top: 0;
+}
 .res-section {
   border-bottom: 1px solid #333;
   font-size: 120%;
